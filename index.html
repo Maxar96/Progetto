@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="/style.scss" />
+    <link href="https://unpkg.com/material-components-web@v5.1.0/dist/material-components-web.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <!-- <script src="https://unpkg.com/material-components-web@v5.1.0/dist/material-components-web.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script> -->
+  </head>
+
+  <body>
+    <div class="page-column">
+      <header class="mdc-top-app-bar">
+        <div class="mdc-top-app-bar__row">
+          <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+            <span class="mdc-top-app-bar__title">Arduino allenamento</span>
+          </section>
+        </div>
+      </header>
+
+      <div class="page-row">
+        <aside class="mdc-drawer">
+          <div class="mdc-drawer__content">
+            <nav class="mdc-list">
+              <a class="mdc-list-item mdc-list-item--activated" href="#" aria-current="page">
+                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>
+                <span class="mdc-list-item__text">Page 1</span>
+              </a>
+              <a class="mdc-list-item" href="#">
+                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i>
+                <span class="mdc-list-item__text">Page 2</span>
+              </a>
+            </nav>
+          </div>
+        </aside>
+
+        <div class="page-wrapper">
+
+        <div id="page-0" class="page-content">
+          Il sito permette di visualizzare lo storico di tutti gli allenamenti inserendo il proprio nome utente e selezionando una delle date.
+        </div>
+        <div id="page-1" class="page-content">
+          <h2 class="altro-font">
+            Inserisci il nome utente
+          </h2>
+          <div class="container container--row">
+            <div class="mdc-text-field username">
+              <input type="text" class="mdc-text-field__input" id="username-input" name="username" />
+              <label class="mdc-floating-label" for="username-input">Username</label>
+              <div class="mdc-line-ripple"></div>
+            </div>
+  
+            <button class="mdc-button search-button">
+              <div class="mdc-button__ripple"></div>
+              <span class="mdc-button__label">Search</span>
+            </button>
+          </div>
+  
+          <div class="mdc-select mdc-select--disabled">
+            <div class="mdc-select__anchor demo-width-class">
+              <i class="mdc-select__dropdown-icon"></i>
+              <div class="mdc-select__selected-text"></div>
+              <span class="mdc-floating-label">Seleziona un giorno</span>
+              <div class="mdc-line-ripple"></div>
+            </div>
+  
+            <div class="mdc-select__menu mdc-menu mdc-menu-surface demo-width-class">
+              <ul class="mdc-list" id="dropdown-menu">
+                <li class="mdc-list-item mdc-list-item--selected" data-value="" aria-selected="true"></li>
+              </ul>
+            </div>
+          </div>
+          <canvas id="myChart"></canvas>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+    <script src="src/index.ts"></script>
+  </body>
+</html>

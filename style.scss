@@ -1,0 +1,89 @@
+body {
+  margin: 0 !important;
+}
+
+.container {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.altro-font {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container--row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.search-button {
+  margin-left: 10px;
+}
+
+.container--day {
+  font-weight: 500;
+}
+
+.container--serie {
+  font-weight: 300;
+  font-size: .9em;
+}
+
+.username {
+  width: 200px;
+}
+
+.demo-width-class {
+  margin-top: 20px;
+  width: 200px;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.page-wrapper {
+  position: relative;
+  flex: 1;
+}
+
+// .page-wrapper::after {
+//   content: "";
+//   top: 0;
+//   left: 0;
+//   bottom: 0;
+//   right: 0;
+//   position: absolute;
+//   z-index: -1;   
+//   background-image: url(https://arbordayblog.org/wp-content/uploads/2018/06/oak-tree-sunset-iStock-477164218-1080x608.jpg);
+//   opacity: 0.5;
+// }
+
+.page-content {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 95%;
+  height: 100%;
+}
+
+.page-column {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.page-row {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  // width: 100%;
+}
+
+.mdc-top-app-bar {
+  position: initial !important;
+}
