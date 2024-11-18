@@ -17,7 +17,7 @@
     "@material/top-app-bar": "^5.1.0",
     "@types/chart.js": "^2.9.15",
     "chart.js": "^2.4.0",
-    "firebase": "7.10.0"
+    "firebase": "10.9.0"
   },
   "devDependencies": {
     "autoprefixer": "^9.7.4",
